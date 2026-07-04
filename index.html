@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ГлавСтройБлок — демо интерфейса складского приложения для сотрудников. HTML/CSS макет.">
+  <meta name="author" content="krwg">
+  <title>ГлавСтройБлок — демо</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .demo-hero {
+      max-width: 720px;
+      margin: 48px auto 32px;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .demo-hero h1 { font-size: 2rem; margin-bottom: 12px; }
+    .demo-hero p { color: #555; line-height: 1.6; margin-bottom: 24px; }
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      max-width: 720px;
+      margin: 0 auto 48px;
+      padding: 0 20px;
+    }
+    .demo-card {
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 24px;
+      background: #fff;
+      text-align: center;
+    }
+    .demo-card h2 { font-size: 1.15rem; margin-bottom: 8px; }
+    .demo-card p { font-size: 0.9rem; color: #666; margin-bottom: 16px; }
+    .demo-card .button { display: inline-block; }
+    .demo-note {
+      max-width: 720px;
+      margin: 0 auto 48px;
+      padding: 16px 20px;
+      background: #f8f8f8;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <h1>
+          <img src="logo.png" alt="Логотип" class="logo-image">
+          <span class="logo-text">ГлавСтройБлок</span>
+        </h1>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="demo-hero">
+      <h1>Складской интерфейс — демо</h1>
+      <p>
+        Статический макет приложения для сотрудников: приёмка и выдача товаров,
+        остатки, заказы, печать накладных. Без сервера — только HTML, CSS и демо-логика в браузере.
+      </p>
+    </div>
+
+    <div class="demo-grid">
+      <div class="demo-card">
+        <h2>Светлая тема</h2>
+        <p>Вход, главная, товары, приёмка, выдача, печать, настройки.</p>
+        <a href="log.html" class="button">Открыть демо</a>
+      </div>
+      <div class="demo-card">
+        <h2>Тёмная тема</h2>
+        <p>Те же экраны с альтернативной палитрой (<code>dark.css</code>).</p>
+        <a href="d.log.html" class="button">Открыть тёмную тему</a>
+      </div>
+    </div>
+
+    <p class="demo-note">
+      <strong>Примечание:</strong> это учебный/портфолио-макет 2024 года, обновлён для GitHub Pages.
+      Формы не отправляют данные на сервер; кнопки печати и смены пароля показывают демо-поведение.
+    </p>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; ГлавСтройБлок, 2026 · <a href="https://github.com/krwg/glavstroyblock">GitHub</a></p>
+    </div>
+  </footer>
+</body>
+</html>
